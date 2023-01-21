@@ -2,6 +2,8 @@ import { useContext } from "react"
 import ThemeContext from "../context/ThemeContext"
 import Header from "./Header"
 import Button from "./Button"
+import Profile from './Profile';
+
 
 function Container() {
     const {theme} = useContext(ThemeContext)
@@ -10,6 +12,8 @@ function Container() {
         <Header/>
         <hr/>
         <Button/>
+        <hr/>
+        <Profile/>
     </div>
   )
 }

@@ -1,12 +1,15 @@
 import './App.css';
 import Container from './components/Container';
+import { UserProvider } from './context/UserContext';
 import {ThemeProvider} from './context/ThemeContext'
 
 function App() {
   return (
     <div className="App">
       <ThemeProvider>
-        <Container/>
+        <UserProvider>
+          <Container/>
+        </UserProvider>
       </ThemeProvider>
     </div>
   );
